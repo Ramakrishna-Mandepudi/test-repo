@@ -7,6 +7,9 @@ jobs:
     steps:
       #- run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - name: test google 
+        shell: pwsh
+        run: Test-NetConnection www.google.com -Port 443
       - name: test
         shell: pwsh
         run: Test-NetConnection -ComputerName 168.153.42.65 -Port 443
