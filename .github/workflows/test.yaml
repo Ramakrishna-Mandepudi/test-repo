@@ -9,7 +9,7 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       # - name: test google 
-      #   shell: pwsh
+      #   shell: pwsh 
       #   run: Test-NetConnection www.google.com -Port 443
       # - name: test
       #   shell: pwsh
